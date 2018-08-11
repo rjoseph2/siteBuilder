@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>{{title}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="UTF-8">
+  <meta name="description" content="{{metadecription}}">
+  <meta name="keywords" content="{{meta}}">
+  {{cssfiles}}
+</head>
+
+<body id="page">
+
+  <div class=" navbar navbar-expand-lg fixed-top navbar-dark bg-primary ">
+    <div class="container">
+      <a href="/index.html" class="navbar-brand">ScriptyCss</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse  menu-item" id="navbarResponsive">
+        {{mainMenu}}
+      </div>
+    </div>
+
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <span class="hidden menu_place_holder">{{siteMenu}}</span>
+      <!-- page content end -->
+        <div class="col-lg-9  col-md-10 content-div card border-primary">{{content1}}</div>
+      <!-- page content end -->
+    </div>
+
+  </div>
+  
+    {{scriptfiles}}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122893206-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('dom', "dom.html");
+      gtag('config', 'UA-122893206-1');
+    </script>
+
+</body>
